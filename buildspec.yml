@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - aws ecr get-login-password --region ap-east-1 | docker login --username AWS --password-stdin 894772516814.dkr.ecr.ap-east-1.amazonaws.com
-      - REPOSITORY_URI= 894772516814.dkr.ecr.ap-east-1.amazonaws.com/nodejs-server-waiming
+      - REPOSITORY_URI=894772516814.dkr.ecr.ap-east-1.amazonaws.com/nodejs-server-waiming
   build:
     commands:
       - echo Build started on `date`
